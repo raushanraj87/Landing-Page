@@ -1,0 +1,172 @@
+/* styles.css */
+
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Header Styles */
+header {
+    background: black;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+span{
+    color: orangered;
+}
+
+header h1 {
+    display: inline;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Hero Section Styles */
+#hero {
+    background: url('image3.jpg') no-repeat center center/cover;
+    color: rgb(251, 250, 255);
+    text-align: right;
+    padding: 6.5rem 0;
+}
+
+#hero .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #e8491d;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+/* About Section Styles */
+#about {
+    padding: 2rem 0;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+#about img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* Menu Section Styles */
+#menu {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.menu-item {
+    margin: 1rem 0;
+    padding: 1rem;
+    background: rgb(202, 198, 193);
+    border: 1px solid #ccc;
+    display: inline-block;
+    width: 30%;
+    margin-right: 1%;
+}
+
+.menu-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.menu-item h3 {
+    margin-top: 0;
+}
+
+/* Contact Section Styles */
+#contact {
+    padding: 2rem 0;
+    background: #e2e2e2;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact label {
+    margin-top: 10px;
+}
+
+#contact input,
+#contact textarea {
+    padding: 10px;
+    margin-top: 5px;
+}
+
+#contact textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+#contact .btn {
+    margin-top: 20px;
+    align-self: flex-start;
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Footer Styles */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav {
+        float: none;
+        text-align: center;
+    }
+    
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .menu-item {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    
+    #hero {
+        padding: 2rem 0;
+    }
+}
